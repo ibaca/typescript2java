@@ -1,0 +1,17 @@
+{
+    "sourceRootDir": "./tsd",
+    "baseJavaPackage": "js",
+    "defaultJavaPackage": "browser",
+    "javaPackages": {
+        "tsd/mapbox-gl": "mapboxgl",
+        "tsd/geojson": "geojson"
+    },
+    "processInternalTypes": false,
+    "outputDirectory": "./out/src/main/java",
+    "renaming": {
+    },
+    "adding": {
+    },
+    "removing": {
+    }
+}
