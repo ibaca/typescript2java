@@ -4,20 +4,22 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-/// <reference types="geojson" />
+// <reference types="geojson" />
 
-declare namespace mapboxgl {
+export as namespace mapboxgl;
+
+export declare namespace mapboxglglobal {
     let accessToken: string;
     let version: string;
 
     export function supported(options?: { failIfMajorPerformanceCaveat?: boolean }): boolean;
 
     export function setRTLTextPlugin(pluginURL: string, callback: Function): void;
-
-    type LngLatLike = number[] | LngLat;
-    type LngLatBoundsLike = number[][] | LngLatLike[] | LngLatBounds;
-    type PointLike = number[] | Point;
-    type Expression = any[];
+}
+    export type LngLatLike = number[] | LngLat;
+    export type LngLatBoundsLike = number[][] | LngLatLike[] | LngLatBounds;
+    export type PointLike = number[] | Point;
+    export type Expression = any[];
 
     /**
      * Map
@@ -1122,7 +1124,7 @@ declare namespace mapboxgl {
         'heatmap-opacity'?: number | Expression;
         'heatmap-opacity-transition'?: Transition;
     }
-}
+//}
 
 declare module 'mapbox-gl' {
     export = mapboxgl;
